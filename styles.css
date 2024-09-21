@@ -1,0 +1,121 @@
+/* General body styles */
+/*NOTE: Comments added via ChatGPT*/
+body {
+    background-color: rgb(147, 221, 250); /* Light blue background color */
+    color: rgb(6, 6, 114); /* Dark blue text color */
+    font-size: calc(5px + 1.25vw); /* Responsive font size based on viewport width */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for the main heading */
+h1 {
+    color: white; /* White text color for the heading */
+}
+
+/* Header styles */
+header {
+    padding: 3%; /* Padding around the header */
+    background-color: rgb(41, 0, 130); /* Dark purple background color */
+    color: aliceblue; /* Light blue text color */
+}
+
+/* Navigation styles */
+nav {
+    width: 25%; /* Width of the navigation area */
+    height: 100%; /* Full height of the container */
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style-type: none; /* Remove default list bullet points */
+    margin: 10; /* Margin around the list */
+    padding: 0; /* Remove padding */
+    width: 25%; /* Width of the navigation list */
+    height: 100%; /* Full height of the navigation area */
+    position: fixed; /* Fixed position on the screen */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+}
+
+/* Navigation list item styles */
+nav li {
+    margin: 0 10px; /* Horizontal margin between list items */
+    border: 10px white; /* Border (though this is not valid, may need adjustment) */
+}
+
+/* Navigation link styles */
+nav a {
+    color: white; /* White text color for links */
+    display: inline-block; /* Allow padding and background */
+    background-color: rgb(94, 94, 246); /* Light purple background for links */
+    padding: 1vh; /* Vertical padding */
+}
+
+/* Media query for responsive design on smaller screens */
+@media screen and (max-width: 750px) {
+    nav ul {
+        display: flex; /* Use flexbox for the navigation list */
+        flex-direction: row; /* Arrange items in a row for small screens */
+        position: fixed; /* Keep it fixed on the screen */
+        margin-top: 0%; /* Reset top margin */
+    }
+
+    nav {
+        width: 100%; /* Full width of the screen */
+        padding: 1vh; /* Vertical padding */
+    }
+
+    main {
+        margin-left: 0%; /* Reset left margin for main content */
+        margin-top: 10%; /* Add top margin to main content */
+    }
+
+    footer {
+        margin-left: 0%; /* Reset left margin for footer */
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+/* Main content styles */
+main {
+    padding: 1vw;
+    margin-left: 25%; /* Left margin to align with navigation */
+    background-color: #d9edff; /* Light background color */
+}
+
+/* Footer styles */
+footer {
+    margin-left: 25%; /* Left margin to align with navigation */
+    background-color: #d9edff; /* Light background color */
+}
+
+/* Image styles */
+img {
+    display: block; /* Display as block element */
+    height: 50vh; /* Height is 50% of the viewport height */
+}
+
+/* Calculator container styles */
+#calculator {
+    background-image: url(bubbles.jpg); /* Background image for the calculator */
+    background-size: contain; /* Scale the background image to fit */
+    height: 60vh; /* Height is 60% of the viewport height */
+    color: rgb(0, 98, 163); /* Dark blue text color */
+    text-align: center; /* Center align text */
+}
+
+/* Button styles */
+.button {
+    background-color: #cbf8ff; /* Light blue background for buttons */
+    border: none; /* No border */
+    color: rgb(2, 73, 120); /* Dark blue text color */
+    padding: 15px 32px; /* Padding around the button */
+    text-align: center; /* Center text in the button */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Allow padding and background */
+    font-size: 16px; /* Font size */
+    border-radius: 10%; /* Rounded corners for the button */
+}

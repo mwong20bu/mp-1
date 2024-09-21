@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects | Madeline Wong's Resume</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--The header for projects page -->
+        <header>
+            <h1>Projects</h1>
+            <p>Here are projects that Madeline Wong has completed</p>
+        </header>
+
+        <!-- Navigation menu on the projects page -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="extracurriculars.html">Extracurriculars</a></li>
+                <li><a href="skills.html">Skills and Languages</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content for the projects page -->
+        <main id="calculator">
+
+            <div>
+                <br>
+                <h3>Javascript Calculator</h3>
+                <label for="first">First Number: </label><input type="text" id="first">
+                <label for="second">Second Number: </label><input type="text" id="second"><br><br>
+                <button class="button" onclick="addition()">+</button>
+                <button class="button" onclick="subtraction()">-</button>
+                <button class="button" onclick="multiplication()">*</button>
+                <button class="button" onclick="division()">/</button>
+                <button class="button" onclick="power()">**</button>
+                <button class="button" onclick="clear_all()">Clear</button>
+            <h3 id="output"></h3>
+            </div>
+            <script src="calc.js"></script>
+
+        </main>
+
+        <!-- Footer for the projects page -->
+        <footer>
+            <p>All Rights Reserved by Madeline Wong <a href="">Credits</a>&copy;</p>
+        </footer>
+
+    </body>
+</html>
